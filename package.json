@@ -1,0 +1,28 @@
+{
+    "name": "enterprise-react-app-webcomponents",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/olegsmetanin/enterprise-react-app"
+    },
+    "license": "MIT",
+    "scripts": {
+        "serve": "gulp serve"
+    },
+    "dependencies": {
+        "@types/react": "15.0.24",
+        "@types/react-dom": "15.5.0",
+        "browser-sync": "2.18.8",
+        "del": "2.2.2",
+        "gulp": "3.9.1",
+        "gulp-exec": "2.1.3",
+        "gulp-util": "3.0.8",
+        "gulp-watch": "4.3.11",
+        "react": "15.5.4",
+        "react-dom": "15.5.4",
+        "run-sequence": "1.2.2",
+        "systemjs": "0.19.47",
+        "typescript": "2.3.2"
+    },
+    "devDependencies": {}
+}
