@@ -45,13 +45,13 @@ gulp.task('tsc', function (cb) {
     var tsc = spawn(require.resolve('./node_modules/.bin/tsc'), ['--module', 'amd', '--target', 'ES5', '--jsx', 'react', '--sourceMap', '--outDir', './public/js', '-w', './src/index.tsx']);
 
     tsc.stdout.on('data', (data) => {
-         var dataStr = data.toString();
+        var dataStr = data.toString();
         if (dataStr.toLowerCase().indexOf('error') === -1) {
             gutil.log('[tsc] ' + dataStr);
         } else {
             gutil.log(gutil.colors.red('[tsc:error] '+ dataStr));
         }
-
+        browserSync.reload();
     });
 
     tsc.stderr.on('data', (data) => {

@@ -106,6 +106,8 @@ common/rush-link.json
 common/last-install.*
 common/rush-recycler
 
+public
+
 !.gitkeep
 
 .env
